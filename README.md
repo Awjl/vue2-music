@@ -24,15 +24,15 @@
 ├── package.json
 ├── prod.server.js
 ├── src
-│   ├── App.vue
-│   ├── api
+│   ├── App.vue(主要)
+│   ├── api(接口)
 │   │   ├── config.js
 │   │   ├── rank.js
 │   │   ├── recommend.js
 │   │   ├── search.js
 │   │   ├── singer.js
 │   │   └── song.js
-│   ├── base
+│   ├── base(公共组件)
 │   │   ├── confirm
 │   │   │   └── confirm.vue
 │   │   ├── listview
@@ -68,7 +68,7 @@
 │   │   │   └── switches.vue
 │   │   └── top-tip
 │   │       └── top-tip.vue
-│   ├── common
+│   ├── common(静态资源)
 │   │   ├── fonts
 │   │   │   ├── music-icon.eot
 │   │   │   ├── music-icon.svg
@@ -92,7 +92,7 @@
 │   │       ├── mixin.styl
 │   │       ├── reset.styl
 │   │       └── variable.styl
-│   ├── components
+│   ├── components(组件)
 │   │   ├── add-song
 │   │   │   └── add-song.vue
 │   │   ├── disc
@@ -125,37 +125,20 @@
 │   │   │   └── top-list.vue
 │   │   └── user-center
 │   │       └── user-center.vue
-│   ├── main.js
-│   ├── router
+│   ├── main.js(入口)
+│   ├── router(路由)
 │   │   └── index.js
-│   └── store
+│   └── store(vuex存放)
 │       ├── actions.js
 │       ├── getters.js
 │       ├── index.js
 │       ├── mutation-types.js
 │       ├── mutations.js
 │       └── state.js
-└── static
+└── static(项目展示)
     ├── 1.png
     ├── 2.png
     ├── 3.png
     ├── 4.png
     └── 5.png
-
-```
-
-## 项目截图
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/1.png)
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/2.png)
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/3.png)
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/4.png)
-
-![image](https://github.com/songhaoreact/vue-music/blob/master/static/5.png)
-
-
-### 安装与运行
 
