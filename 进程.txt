@@ -7,4 +7,12 @@
 四个页面及路由 rank(头部) recommend(推荐页面) search(搜索页面) singer(歌手页面)
 添加了 六个组件 修改路由配置和main.js的内容，在app.vue中插入 router-view 并引入公共组件
 
+4,推荐页面的开发
+jsonp的原理
+并不是ajax请求  动态创建script标签，进行解决跨域问题
+ ./common/js/jsonp 封装一个jsonp
+ 并在这个函数中进行拼接
 
+在./api/recommend中用jsonp调取接口获取数据
+在./api/config.js中定义固定值
+ 

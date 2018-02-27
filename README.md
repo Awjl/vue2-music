@@ -26,9 +26,9 @@
 ├── src
 │   ├── App.vue(主要)
 │   ├── api(接口)
-│   │   ├── config.js
+│   │   ├── config.js(默认固定参数)
 │   │   ├── rank.js
-│   │   ├── recommend.js
+│   │   ├── recommend.js(推荐页面接口)
 │   │   ├── search.js
 │   │   ├── singer.js
 │   │   └── song.js
@@ -80,7 +80,7 @@
 │   │   │   ├── cache.js
 │   │   │   ├── config.js
 │   │   │   ├── dom.js
-│   │   │   ├── jsonp.js
+│   │   │   ├── jsonp.js(封装的一个jsonp函数和拼接函数)
 │   │   │   ├── mixin.js
 │   │   │   ├── singer.js
 │   │   │   ├── song.js
