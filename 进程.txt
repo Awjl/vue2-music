@@ -15,4 +15,8 @@ jsonp的原理
 
 在./api/recommend中用jsonp调取接口获取数据
 在./api/config.js中定义固定值
- 
+
+5，开发轮播组件
+在./base/slider/slider
+使用插件 better-scroll 实现slider轮播 针对移动端 
+ ./common/js/dom  添加一个可以操作DOM元素的组件

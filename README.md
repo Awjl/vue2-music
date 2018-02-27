@@ -32,7 +32,7 @@
 │   │   ├── search.js
 │   │   ├── singer.js
 │   │   └── song.js
-│   ├── base(公共组件)
+│   ├── base(基础组件库)
 │   │   ├── confirm
 │   │   │   └── confirm.vue
 │   │   ├── listview
@@ -54,7 +54,7 @@
 │   │   │   └── search-box.vue
 │   │   ├── search-list
 │   │   │   └── search-list.vue
-│   │   ├── slider
+│   │   ├── slider(轮播图组件)
 │   │   │   └── slider.vue
 │   │   ├── song-list
 │   │   │   ├── first@2x.png
@@ -79,7 +79,7 @@
 │   │   ├── js
 │   │   │   ├── cache.js
 │   │   │   ├── config.js
-│   │   │   ├── dom.js
+│   │   │   ├── dom.js(dom相关操作)
 │   │   │   ├── jsonp.js(封装的一个jsonp函数和拼接函数)
 │   │   │   ├── mixin.js
 │   │   │   ├── singer.js
@@ -92,7 +92,7 @@
 │   │       ├── mixin.styl
 │   │       ├── reset.styl
 │   │       └── variable.styl
-│   ├── components(组件)
+│   ├── components(业务组件库)
 │   │   ├── add-song
 │   │   │   └── add-song.vue
 │   │   ├── disc
