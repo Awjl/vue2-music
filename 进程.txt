@@ -1,0 +1,10 @@
+1，空白安装包
+2，main.js 引入 fastclick //在body下的所有按钮都有一个300毫秒的延迟 
+
+3,页面骨架的开发
+公共组件 头部组件(m-header) 切换栏组件(tab)
+
+四个页面及路由 rank(头部) recommend(推荐页面) search(搜索页面) singer(歌手页面)
+添加了 六个组件 修改路由配置和main.js的内容，在app.vue中插入 router-view 并引入公共组件
+
+

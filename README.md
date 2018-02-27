@@ -97,7 +97,7 @@
 │   │   │   └── add-song.vue
 │   │   ├── disc
 │   │   │   └── disc.vue
-│   │   ├── m-header
+│   │   ├── m-header(头部组件)
 │   │   │   ├── logo@2x.png
 │   │   │   ├── logo@3x.png
 │   │   │   └── m-header.vue
@@ -107,13 +107,13 @@
 │   │   │   └── player.vue
 │   │   ├── playlist
 │   │   │   └── playlist.vue
-│   │   ├── rank
+│   │   ├── rank(排行组件)
 │   │   │   └── rank.vue
-│   │   ├── recommend
+│   │   ├── recommend(推荐组件)
 │   │   │   └── recommend.vue
-│   │   ├── search
+│   │   ├── search(搜索组件)
 │   │   │   └── search.vue
-│   │   ├── singer
+│   │   ├── singer(歌手组件)
 │   │   │   └── singer.vue
 │   │   ├── singer-detail
 │   │   │   └── singer-detail.vue
