@@ -48,7 +48,7 @@
 │   │   │   └── progress-bar.vue
 │   │   ├── progress-circle
 │   │   │   └── progress-circle.vue
-│   │   ├── scroll
+│   │   ├── scroll(滚动组件)
 │   │   │   └── scroll.vue
 │   │   ├── search-box
 │   │   │   └── search-box.vue
