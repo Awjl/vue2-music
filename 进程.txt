@@ -29,3 +29,5 @@ jsonp 无法访问
 
 在安装axios后，在build/dev-server.js 14行添加
 
+7,图片懒加载  vue-lazyload插件
+在main.js中引用  使用方法 在需要懒加载的图片上 使用 v-lazy 属性
