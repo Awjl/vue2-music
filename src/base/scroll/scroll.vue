@@ -85,6 +85,7 @@
         this.scroll && this.scroll.refresh()
       },
       scrollTo() {
+        // 滚到对应位置
         this.scroll && this.scroll.scrollTo.apply(this.scroll, arguments)
       },
       scrollToElement() {

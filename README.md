@@ -30,14 +30,14 @@
 │   │   ├── rank.js
 │   │   ├── recommend.js(推荐页面接口)
 │   │   ├── search.js
-│   │   ├── singer.js
+│   │   ├── singer.js(歌手页面接口)
 │   │   └── song.js
 │   ├── base(基础组件库)
 │   │   ├── confirm
 │   │   │   └── confirm.vue
-│   │   ├── listview
+│   │   ├── listview(类通讯录组件)
 │   │   │   └── listview.vue
-│   │   ├── loading
+│   │   ├── loading(加载组件)
 │   │   │   ├── loading.gif
 │   │   │   └── loading.vue
 │   │   ├── no-result
