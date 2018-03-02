@@ -39,6 +39,7 @@ jsonp 无法访问
 9，创建歌手页面中的列表类组件
 
 10,右侧快速入口
+e.targe 获取当前对象
 歌手页面完成，修改两个错误，1，./common/js/dom.js 中getData函数修改
 2，
 ./components/singer/singer _normalizeSinger函数 中
@@ -46,3 +47,27 @@ map[key].items.push(new Singer({
     id: item.Fsinger_mid,
     name: item.Fsinger_name
 }))
+
+
+11，歌手详情页面
+使用二级路由
+子路由配置及转场动画
+
+12，vuex 状态管理模式  使用场景 
+1，解决多个组件状态共享
+2，解决数据传递
+
+vuex 初始化
+actions.js(异步操作/修改 或者对于mutations的封装)
+getters.js(获取state映射)
+index.js(入口文件)
+mutation-types.js(所有相关new action 名字 存储字符串常量)
+mutations.js(所有的mutations)
+state.js(所有状态)
+
+第一步：定义state
+第二步：定义mutation的修改，先定义mutation-types
+第三步：拿到mutation-types，在mutation中修改操作
+第四步：在getters中取数据到组件中
+第五步：在index中引入（actions暂时不用）
+第六步：注入main.js

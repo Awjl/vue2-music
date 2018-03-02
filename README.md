@@ -115,7 +115,7 @@
 │   │   │   └── search.vue
 │   │   ├── singer(歌手组件)
 │   │   │   └── singer.vue
-│   │   ├── singer-detail
+│   │   ├── singer-detail(歌手详情页)
 │   │   │   └── singer-detail.vue
 │   │   ├── suggest
 │   │   │   └── suggest.vue
@@ -129,12 +129,12 @@
 │   ├── router(路由)
 │   │   └── index.js
 │   └── store(vuex存放)
-│       ├── actions.js
-│       ├── getters.js
-│       ├── index.js
-│       ├── mutation-types.js
-│       ├── mutations.js
-│       └── state.js
+│       ├── actions.js(异步操作/修改 或者对于mutations的封装)
+│       ├── getters.js(获取state映射)
+│       ├── index.js(入口文件)
+│       ├── mutation-types.js(所有相关new action 名字 存储字符串常量)
+│       ├── mutations.js(所有的mutations)
+│       └── state.js(所有状态)
 └── static(项目展示)
     ├── 1.png
     ├── 2.png
