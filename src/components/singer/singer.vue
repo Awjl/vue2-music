@@ -28,7 +28,7 @@
         this.$router.push({
           path: `/singer/${singer.id}`
         })
-        // 调用VUEX
+        // 调用VUEX,通过这个修改了state
         this.setSinger(singer)
       },
       _getSingerList() {
