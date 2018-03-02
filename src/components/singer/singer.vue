@@ -26,6 +26,7 @@
         getSingerList().then((res) => {
           if (res.code === ERR_OK) {
             this.singers = this._normalizeSinger(res.data.list)
+            console.log(res.data.list)
           }
         })
       },
@@ -51,8 +52,8 @@
             }
           }
           map[key].items.push(new Singer({
-            id: item.Fsiger_mid,
-            name: item.Fsiger_name
+            id: item.Fsinger_mid,
+            name: item.Fsinger_name
           }))
         })
         // 为了得到有序列表，我们需要处理 map

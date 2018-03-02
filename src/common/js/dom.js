@@ -13,13 +13,11 @@ export function addClass(el, className) {
   newClass.push(className)
   el.className = newClass.join(' ')
 }
-
+// 查找元素
 export function getData(el, name, val) {
   const prefix = 'data-'
-  name = prefix + name
   if (val) {
     return el.setAttribute(prefix + name, val)
-  } else {
-    return el.get
   }
+  return el.getAttribute(prefix + name)
 }

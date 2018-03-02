@@ -39,3 +39,10 @@ jsonp 无法访问
 9，创建歌手页面中的列表类组件
 
 10,右侧快速入口
+歌手页面完成，修改两个错误，1，./common/js/dom.js 中getData函数修改
+2，
+./components/singer/singer _normalizeSinger函数 中
+map[key].items.push(new Singer({
+    id: item.Fsinger_mid,
+    name: item.Fsinger_name
+}))
