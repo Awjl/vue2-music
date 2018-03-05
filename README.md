@@ -56,7 +56,7 @@
 │   │   │   └── search-list.vue
 │   │   ├── slider(轮播图组件)
 │   │   │   └── slider.vue
-│   │   ├── song-list
+│   │   ├── song-list(歌曲列表组件)
 │   │   │   ├── first@2x.png
 │   │   │   ├── first@3x.png
 │   │   │   ├── second@2x.png
