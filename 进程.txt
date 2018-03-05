@@ -71,3 +71,5 @@ state.js(所有状态)
 第四步：在getters中取数据到组件中
 第五步：在index中引入（actions暂时不用）
 第六步：注入main.js
+
+12，详情列表组件

@@ -101,7 +101,7 @@
 │   │   │   ├── logo@2x.png
 │   │   │   ├── logo@3x.png
 │   │   │   └── m-header.vue
-│   │   ├── music-list
+│   │   ├── music-list(详情公共组件)
 │   │   │   └── music-list.vue
 │   │   ├── player
 │   │   │   └── player.vue
