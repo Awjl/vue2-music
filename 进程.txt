@@ -1,5 +1,5 @@
 1，空白安装包
-2，main.js 引入 fastclick //在body下的所有按钮都有一个300毫秒的延迟 
+2，main.js 引入 fastclick //在body下的所有点击事件都减少一个300毫秒的延迟 
 
 3,页面骨架的开发
 公共组件 头部组件(m-header) 切换栏组件(tab)
@@ -88,3 +88,15 @@ backdrop-filter 高斯模糊属性
 第四步：在mutation中 定义数据修改的逻辑
 第五步：在anctions中定义，有需要时在定义，不需要时不需要定义 处理异步操作，或者是处理mutation的封装 如果需要触发多个mutation操作时，需要封装，在使用anctions进行操作
 
+16,播放器组件
+放在app.vue 下面
+
+transition vue 自带的过度系统
+
+钩子函数 动画
+@enter="enter" 
+@after-enter="afterEnter"
+@leave="leave" 
+@after-leave="leaveEnter"
+
+引入动画插件 create-keyframe-animation

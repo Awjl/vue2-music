@@ -103,7 +103,7 @@
 │   │   │   └── m-header.vue
 │   │   ├── music-list(详情公共组件)
 │   │   │   └── music-list.vue
-│   │   ├── player
+│   │   ├── player(播放器组件)
 │   │   │   └── player.vue
 │   │   ├── playlist
 │   │   │   └── playlist.vue
