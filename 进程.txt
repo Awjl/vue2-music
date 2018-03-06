@@ -79,3 +79,12 @@ backdrop-filter 高斯模糊属性
 
 14,有关 music-list的优化
 ./common/js/dom
+
+15, 播放器  重点核心
+先设置vuex中的公用数据
+第一步：在state.js定义公用概念 定义原始相关数据
+第二步：在getter.js中引用  对数据的映射
+第三步：在mutation-types中引用 需要哪些修改动作
+第四步：在mutation中 定义数据修改的逻辑
+第五步：在anctions中定义，有需要时在定义，不需要时不需要定义 处理异步操作，或者是处理mutation的封装 如果需要触发多个mutation操作时，需要封装，在使用anctions进行操作
+
