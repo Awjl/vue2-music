@@ -100,3 +100,5 @@ transition vue 自带的过度系统
 @after-leave="leaveEnter"
 
 引入动画插件 create-keyframe-animation
+
+17,实现播放功能
