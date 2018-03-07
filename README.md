@@ -44,7 +44,7 @@
 │   │   │   ├── no-result.vue
 │   │   │   ├── no-result@2x.png
 │   │   │   └── no-result@3x.png
-│   │   ├── progress-bar
+│   │   ├── progress-bar(进度条组件)
 │   │   │   └── progress-bar.vue
 │   │   ├── progress-circle
 │   │   │   └── progress-circle.vue
