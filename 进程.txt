@@ -110,3 +110,5 @@ transition vue 自带的过度系统
 20,歌曲时长
 
 21,进度条
+控制进度条的移动
+touchstart.prevent  .prevent组织浏览器默认事件
