@@ -46,7 +46,7 @@
 │   │   │   └── no-result@3x.png
 │   │   ├── progress-bar(进度条组件)
 │   │   │   └── progress-bar.vue
-│   │   ├── progress-circle
+│   │   ├── progress-circle(圆形进度条)
 │   │   │   └── progress-circle.vue
 │   │   ├── scroll(滚动组件)
 │   │   │   └── scroll.vue

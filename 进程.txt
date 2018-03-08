@@ -112,3 +112,9 @@ transition vue 自带的过度系统
 21,进度条
 控制进度条的移动
 touchstart.prevent  .prevent组织浏览器默认事件
+
+原型进度条
+<slot></slot>  插槽
+//圆形进度条的核心点
+:stroke-dasharray="dashArray"
+:stroke-dashoffset="dashOffset"
