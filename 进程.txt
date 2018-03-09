@@ -118,3 +118,5 @@ touchstart.prevent  .prevent组织浏览器默认事件
 //圆形进度条的核心点
 :stroke-dasharray="dashArray"
 :stroke-dashoffset="dashOffset"
+
+播放模式

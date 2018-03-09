@@ -78,13 +78,13 @@
 │   │   │   └── default.png
 │   │   ├── js
 │   │   │   ├── cache.js
-│   │   │   ├── config.js
+│   │   │   ├── config.js(常量定义)
 │   │   │   ├── dom.js(dom相关操作)
 │   │   │   ├── jsonp.js(封装的一个jsonp函数和拼接函数)
 │   │   │   ├── mixin.js
-│   │   │   ├── singer.js
-│   │   │   ├── song.js
-│   │   │   └── util.js
+│   │   │   ├── singer.js(歌手类)
+│   │   │   ├── song.js(歌单类)
+│   │   │   └── util.js(随机函数)
 │   │   └── stylus
 │   │       ├── base.styl
 │   │       ├── icon.styl
