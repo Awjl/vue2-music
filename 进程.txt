@@ -119,4 +119,10 @@ touchstart.prevent  .prevent组织浏览器默认事件
 :stroke-dasharray="dashArray"
 :stroke-dashoffset="dashOffset"
 
-播放模式
+播放模式 完成
+
+歌词抓取 第三方库lyric-parser 解析歌词
+
+组件功能完善
+
+

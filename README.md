@@ -81,7 +81,7 @@
 │   │   │   ├── config.js(常量定义)
 │   │   │   ├── dom.js(dom相关操作)
 │   │   │   ├── jsonp.js(封装的一个jsonp函数和拼接函数)
-│   │   │   ├── mixin.js
+│   │   │   ├── mixin.js(控制缩小后播放组件距离列表的高度)
 │   │   │   ├── singer.js(歌手类)
 │   │   │   ├── song.js(歌单类)
 │   │   │   └── util.js(随机函数)
