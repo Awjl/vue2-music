@@ -23,3 +23,5 @@ export const currentIndex = state => state.currentIndex
 export const currentSong = (state) => {
   return state.playlist[state.currentIndex] || {}
 }
+// 创建歌单对象
+export const disc = state => state.disc

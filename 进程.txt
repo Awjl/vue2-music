@@ -125,4 +125,22 @@ touchstart.prevent  .prevent组织浏览器默认事件
 
 组件功能完善
 
+22，主页跳转至详情页
+歌单详情页
 
+每次在VUEX增加一个数据的时候，都需要修改state.js => mutation.types => mutations => getters =>(如果有需要修改的时候) actions
+
+在页面中引用 VUEX的mapMutations方法  在methods中扩展 这个是传入数据
+如
+methods: {
+    ...mapMutations({
+        setDisc: 'SET_DISC'
+      })
+}
+在接收数据的页面中  使用VUEX的mapGetters方法 在computed中扩展
+如 
+    computed: {
+        ...mapGetters([
+            'disc'
+        ])
+    }

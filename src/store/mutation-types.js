@@ -13,5 +13,7 @@ export const SET_SEQUENCE_LIST = 'SET_SEQUENCE_LIST'
 export const SET_PLAY_MODE = 'SET_PLAY_MODE'
 // 2.当前播放的索引
 export const SET_CURRENT_INDEX = 'SET_CURRENT_INDEX'
-// 2.计算顺序
+
+// 3.设置歌单对象
+export const SET_DISC = 'SET_DISC'
 

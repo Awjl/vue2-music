@@ -95,7 +95,7 @@
 │   ├── components(业务组件库)
 │   │   ├── add-song
 │   │   │   └── add-song.vue
-│   │   ├── disc
+│   │   ├── disc(歌单详情页)
 │   │   │   └── disc.vue
 │   │   ├── m-header(头部组件)
 │   │   │   ├── logo@2x.png
