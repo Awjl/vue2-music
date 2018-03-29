@@ -27,7 +27,7 @@
 │   ├── App.vue(主要)
 │   ├── api(接口)
 │   │   ├── config.js(默认固定参数)
-│   │   ├── rank.js
+│   │   ├── rank.js(歌手排行接口)
 │   │   ├── recommend.js(推荐页面接口)
 │   │   ├── search.js
 │   │   ├── singer.js(歌手页面接口)
