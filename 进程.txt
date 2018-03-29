@@ -148,3 +148,6 @@ methods: {
 23.排行榜的布局
 ****在webpack.base.config.js中module.exports函数下resolve的alias更改引入
 
+24.排行详情页
+
+25.扩展song-list组件

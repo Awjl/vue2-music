@@ -15,7 +15,9 @@ const state = {
   // 当前播放的索引
   currentIndex: -1,
   // 歌单对象
-  disc: {}
+  disc: {},
+  // 排行页面
+  topList: {}
 }
 
 export default state

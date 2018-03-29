@@ -121,7 +121,7 @@
 │   │   │   └── suggest.vue
 │   │   ├── tab
 │   │   │   └── tab.vue
-│   │   ├── top-list
+│   │   ├── top-list(排行列表)
 │   │   │   └── top-list.vue
 │   │   └── user-center
 │   │       └── user-center.vue

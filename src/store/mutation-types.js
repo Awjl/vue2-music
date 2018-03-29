@@ -16,4 +16,6 @@ export const SET_CURRENT_INDEX = 'SET_CURRENT_INDEX'
 
 // 3.设置歌单对象
 export const SET_DISC = 'SET_DISC'
+// 4.排行页面
+export const SET_TOP_LIST = 'SET_TOP_LIST'
 

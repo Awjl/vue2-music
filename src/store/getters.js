@@ -25,3 +25,6 @@ export const currentSong = (state) => {
 }
 // 创建歌单对象
 export const disc = state => state.disc
+
+// 排行页面
+export const topList = state => state.topList
