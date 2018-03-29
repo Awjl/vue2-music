@@ -50,7 +50,7 @@
 │   │   │   └── progress-circle.vue
 │   │   ├── scroll(滚动组件)
 │   │   │   └── scroll.vue
-│   │   ├── search-box
+│   │   ├── search-box(搜索框组件)
 │   │   │   └── search-box.vue
 │   │   ├── search-list
 │   │   │   └── search-list.vue
@@ -117,7 +117,7 @@
 │   │   │   └── singer.vue
 │   │   ├── singer-detail(歌手详情页)
 │   │   │   └── singer-detail.vue
-│   │   ├── suggest
+│   │   ├── suggest(搜索检索列表组件)
 │   │   │   └── suggest.vue
 │   │   ├── tab
 │   │   │   └── tab.vue
