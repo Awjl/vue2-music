@@ -40,7 +40,7 @@
 │   │   ├── loading(加载组件)
 │   │   │   ├── loading.gif
 │   │   │   └── loading.vue
-│   │   ├── no-result
+│   │   ├── no-result(没有数据时显示的组件)
 │   │   │   ├── no-result.vue
 │   │   │   ├── no-result@2x.png
 │   │   │   └── no-result@3x.png

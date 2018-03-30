@@ -32,6 +32,7 @@
         default: false
       },
       beforeScroll: {
+        // 滚动的时候收起键盘
         type: Boolean,
         default: false
       },
@@ -72,6 +73,7 @@
         }
 
         if (this.beforeScroll) {
+          // 当有这个属性的时候，派发这样一个事件
           this.scroll.on('beforeScrollStart', () => {
             this.$emit('beforeScroll')
           })
