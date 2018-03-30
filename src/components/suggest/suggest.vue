@@ -114,6 +114,8 @@
           // 处理歌曲跳转至播放器页面所要处理的逻辑，在action中定义
           this.insertSong(item)
         }
+
+        this.$emit('select')
       },
       listScroll() {
         this.$emit('listScroll')

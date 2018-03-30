@@ -29,9 +29,9 @@
 │   │   ├── config.js(默认固定参数)
 │   │   ├── rank.js(歌手排行接口)
 │   │   ├── recommend.js(推荐页面接口)
-│   │   ├── search.js
+│   │   ├── search.js(搜索页面接口)
 │   │   ├── singer.js(歌手页面接口)
-│   │   └── song.js
+│   │   └── song.js(歌曲列表接口)
 │   ├── base(基础组件库)
 │   │   ├── confirm
 │   │   │   └── confirm.vue
@@ -52,7 +52,7 @@
 │   │   │   └── scroll.vue
 │   │   ├── search-box(搜索框组件)
 │   │   │   └── search-box.vue
-│   │   ├── search-list
+│   │   ├── search-list(搜索历史列表组件)
 │   │   │   └── search-list.vue
 │   │   ├── slider(轮播图组件)
 │   │   │   └── slider.vue
@@ -77,7 +77,7 @@
 │   │   ├── image
 │   │   │   └── default.png
 │   │   ├── js
-│   │   │   ├── cache.js
+│   │   │   ├── cache.js(处理一些与search有关的逻辑，还有与localhost有关的逻辑)
 │   │   │   ├── config.js(常量定义)
 │   │   │   ├── dom.js(dom相关操作)
 │   │   │   ├── jsonp.js(封装的一个jsonp函数和拼接函数)
