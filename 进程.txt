@@ -157,3 +157,7 @@ methods: {
 
 --搜索框组件
 --搜索检索列表组件
+在scroll 添加一个上拉刷新
+--检索列表，人名=> 歌手列表页 歌曲=>播放页 修改路由
+
+mapActions VUEX中调用action的方法和mapMutations位置一样

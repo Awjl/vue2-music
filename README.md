@@ -119,7 +119,7 @@
 │   │   │   └── singer-detail.vue
 │   │   ├── suggest(搜索检索列表组件)
 │   │   │   └── suggest.vue
-│   │   ├── tab
+│   │   ├── tab(切换列表组件)
 │   │   │   └── tab.vue
 │   │   ├── top-list(排行列表)
 │   │   │   └── top-list.vue

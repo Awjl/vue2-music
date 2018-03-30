@@ -1,20 +1,152 @@
 <template>
-  <div class="suggest">
+  <scroll class="suggest" :data="result" :pullup="pullup" @scrollToEnd="scrollMore" ref="suggest">
     <ul class="suggest-list">
-      <li class="suggest-item" >
+      <li class="suggest-item" v-for="item in result" @click="selectItem(item)">
         <div class="icon">
-          <i></i>
+          <i :class="getIconCls(item)"></i>
         </div>
         <div class="name">
-          <p class="text"></p>
+          <p class="text" v-html="getDisplayName(item)"></p>
         </div>
       </li>
+      <loading v-show="hasMore" title=""></loading> 
     </ul>
-  </div>
+  </scroll>
 </template>   
 
 <script type="text/ecmascript-6">
-  
+  import {search} from 'api/search'
+  import {ERR_OK} from 'api/config'
+  import {createSong} from 'common/js/song'
+  import Scroll from 'base/scroll/scroll'
+  import Loading from 'base/loading/loading'
+  import Singer from 'common/js/singer'
+  import {mapMutations, mapActions} from 'vuex'
+
+  const TYPE_SINGER = 'singer'
+  // 数据条数
+  const perpage = 20
+
+  export default {
+    data () {
+      return {
+        page: 1,
+        result: [],
+        pullup: true,
+        hasMore: true
+      }
+    },
+    props: {
+      query: {
+        type: String,
+        default: ''
+      },
+      showSinger: {
+        type: Boolean,
+        default: true
+      }
+    },
+    methods: {
+      search() {
+        // 改变内容的时候，要初始化
+        this.page = 1
+        this.$refs.suggest.scrollTo(0, 0)
+        this.hasMore = true
+        search(this.query, this.page, this.showSinger, perpage
+        ).then((res) => {
+          if (res.code === ERR_OK) {
+            this.result = this._genResult(res.data)
+            this._checkMore(res.data)
+          }
+        })
+      },
+      scrollMore() {
+        if (!this.hasMore) {
+          return
+        }
+        this.page++
+        search(this.query, this.page, this.showSinger, perpage).then((res) => {
+          if (res.code === ERR_OK) {
+            // 这里是追加数据，所以不能直接赋值
+            this.result = this.result.concat(this._genResult(res.data))
+            this._checkMore(res.data)
+          }
+        })
+      },
+      getIconCls(item) {
+        if (item.type === TYPE_SINGER) {
+          return 'icon-mine'
+        } else {
+          return 'icon-music'
+        }
+      },
+      getDisplayName(item) {
+        if (item.type === TYPE_SINGER) {
+          return item.singername
+        } else {
+          return `${item.name}-${item.singer}`
+        }
+      },
+      selectItem(item) {
+        // 跳转页面
+        if (item.type === TYPE_SINGER) {
+          // 如果是歌手的话跳转到歌手页面
+          const singer = new Singer({
+            id: item.singermid,
+            name: item.singername
+          })
+          this.$router.push({
+            path: `/search/${singer.id}`
+          })
+          this.setSinger(singer)
+        } else {
+          // 处理歌曲跳转至播放器页面所要处理的逻辑，在action中定义
+          this.insertSong(item)
+        }
+      },
+      _checkMore(data) {
+        const song = data.song
+        if (!song.list.length || (song.curnum + song.curpage * perpage) >= song.totalnum) {
+          this.hasMore = false
+        }
+      },
+      _genResult(data) {
+        let ret = []
+        if (data.zhida && data.zhida.singerid) {
+          ret.push({...data.zhida, ...{type: TYPE_SINGER}})
+        }
+        if (data.song) {
+          ret = ret.concat(this._normalizeSongs(data.song.list))
+        }
+        console.log(ret)
+        return ret
+      },
+      _normalizeSongs(list) {
+        let ret = []
+        list.forEach((musicData) => {
+          if (musicData.songid && musicData.albumid) {
+            ret.push(createSong(musicData))
+          }
+        })
+        return ret
+      },
+      ...mapMutations({
+        setSinger: 'SET_SINGER'
+      }),
+      ...mapActions([
+        'insertSong'
+      ])
+    },
+    watch: {
+      query() {
+        this.search()
+      }
+    },
+    components: {
+      Scroll,
+      Loading
+    }
+  }
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
