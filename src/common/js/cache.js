@@ -27,7 +27,7 @@ function insertArray(arr, val, compare, maxLen) {
     arr.pop()
   }
 }
-
+// 删除本地缓存数据
 function deleteFromArray(arr, compare) {
   const index = arr.findIndex(compare)
   if (index > -1) {
@@ -36,7 +36,7 @@ function deleteFromArray(arr, compare) {
 }
 // 保存搜索结果 实现
 export function saveSearch(query) {
-  // 获取当前缓存
+  // 获取当前缓存列表
   let searches = storage.get(SEARCH_KEY, [])
   insertArray(searches, query, (item) => {
     return item === query
@@ -44,16 +44,18 @@ export function saveSearch(query) {
   storage.set(SEARCH_KEY, searches)
   return searches
 }
-
+// 删除本地缓存数据
 export function deleteSearch(query) {
+  // 获取当前缓存列表
   let searches = storage.get(SEARCH_KEY, [])
   deleteFromArray(searches, (item) => {
     return item === query
   })
+  // 改变后保存一下数组
   storage.set(SEARCH_KEY, searches)
   return searches
 }
-
+// 清除本地所有数据
 export function clearSearch() {
   storage.remove(SEARCH_KEY)
   return []
