@@ -93,7 +93,7 @@
 │   │       ├── reset.styl
 │   │       └── variable.styl
 │   ├── components(业务组件库)
-│   │   ├── add-song
+│   │   ├── add-song(添加歌曲页面)
 │   │   │   └── add-song.vue
 │   │   ├── disc(歌单详情页)
 │   │   │   └── disc.vue
@@ -105,7 +105,7 @@
 │   │   │   └── music-list.vue
 │   │   ├── player(播放器组件)
 │   │   │   └── player.vue
-│   │   ├── playlist
+│   │   ├── playlist(歌曲列表页)
 │   │   │   └── playlist.vue
 │   │   ├── rank(排行组件)
 │   │   │   └── rank.vue

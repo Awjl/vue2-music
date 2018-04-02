@@ -25,9 +25,10 @@ export const playlistMixin = {
     }
   }
 }
-
+// 创建两个组件公用的JS文件
 export const playerMixin = {
   computed: {
+    // 样式共享
     iconMode() {
       return this.mode === playMode.sequence ? 'icon-sequence' : this.mode === playMode.loop ? 'icon-loop' : 'icon-random'
     },
@@ -40,6 +41,7 @@ export const playerMixin = {
     ])
   },
   methods: {
+    // 点击事件共享
     changeMode() {
       const mode = (this.mode + 1) % 3
       this.setPlayMode(mode)
@@ -89,7 +91,7 @@ export const playerMixin = {
     ])
   }
 }
-
+// 与search相关的共享代码
 export const searchMixin = {
   data() {
     return {
@@ -113,6 +115,7 @@ export const searchMixin = {
       this.$refs.searchBox.setQuery(query)
     },
     saveSearch() {
+      // 保存搜索结果
       this.saveSearchHistory(this.query)
     },
     ...mapActions([
