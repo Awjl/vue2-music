@@ -33,7 +33,7 @@
 │   │   ├── singer.js(歌手页面接口)
 │   │   └── song.js(歌曲列表接口)
 │   ├── base(基础组件库)
-│   │   ├── confirm
+│   │   ├── confirm(弹窗组件)
 │   │   │   └── confirm.vue
 │   │   ├── listview(类通讯录组件)
 │   │   │   └── listview.vue

@@ -170,3 +170,4 @@ mapActions VUEX中调用action的方法和mapMutations位置一样
 --搜索历史
 -cache.js(处理一些与storage有关的逻辑，还有与localhost有关的逻辑) 用第三方库 good-storage
 --点击历史的时候，把数据放入搜索框，点击差号存本地清除当前歌曲，点击垃圾桶，删除所有缓存
+-- 弹窗组件   confirm
