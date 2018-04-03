@@ -24,7 +24,7 @@ const state = {
   // 最近播放 初始值从缓存中读取
   playHistory: loadPlay(),
   // 收藏数据列表 初始值从缓存中读取
-  fayoriteList: loadFavorite()
+  favoriteList: loadFavorite()
 }
 
 export default state

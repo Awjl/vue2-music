@@ -61,6 +61,7 @@ export const playerMixin = {
       this.setCurrentIndex(index)
     },
     toggleFavorite(song) {
+      // 共享收藏 收藏或取消到列表
       if (this.isFavorite(song)) {
         this.deleteFavoriteList(song)
       } else {
@@ -68,12 +69,14 @@ export const playerMixin = {
       }
     },
     getFavoriteIcon(song) {
+      // 共享收藏 定义样式
       if (this.isFavorite(song)) {
         return 'icon-favorite'
       }
       return 'icon-not-favorite'
     },
     isFavorite(song) {
+      // 这首歌是否在列表中
       const index = this.favoriteList.findIndex((item) => {
         return item.id === song.id
       })
