@@ -64,9 +64,9 @@
 │   │   │   ├── song-list.vue
 │   │   │   ├── third@2x.png
 │   │   │   └── third@3x.png
-│   │   ├── switches
+│   │   ├── switches(左右开关组件)
 │   │   │   └── switches.vue
-│   │   └── top-tip
+│   │   └── top-tip(添加成功提示组件)
 │   │       └── top-tip.vue
 │   ├── common(静态资源)
 │   │   ├── fonts

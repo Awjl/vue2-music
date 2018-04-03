@@ -3,7 +3,7 @@ import storage from 'good-storage'
 // 定义搜索的key，最大缓存15条数据，当超过15条的时候，删除时间最长的一条
 const SEARCH_KEY = '__search__'
 const SEARCH_MAX_LEN = 15
-
+// 定义可以存储最近播放
 const PLAY_KEY = '__play__'
 const PLAY_MAX_LEN = 200
 
@@ -64,7 +64,7 @@ export function clearSearch() {
 export function loadSearch() {
   return storage.get(SEARCH_KEY, [])
 }
-
+// 最近播放列表存储
 export function savePlay(song) {
   let songs = storage.get(PLAY_KEY, [])
   insertArray(songs, song, (item) => {
@@ -73,7 +73,7 @@ export function savePlay(song) {
   storage.set(PLAY_KEY, songs)
   return songs
 }
-
+// 读取最近播放列表数据
 export function loadPlay() {
   return storage.get(PLAY_KEY, [])
 }

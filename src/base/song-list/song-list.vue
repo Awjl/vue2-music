@@ -1,7 +1,7 @@
 <template>
   <div class="song-list">
     <ul>
-      <li @click="selsectItem(song, index)" v-for="(song, index) in songs" class="item">
+      <li @click="selectItem(song, index)" class="item" v-for="(song, index) in songs">
         <div class="rank" v-show="rank">
           <span :class="getRankCls(index)" v-text="getRankText(index)"></span>
         </div>
@@ -27,8 +27,7 @@
       }
     },
     methods: {
-      selsectItem(item, index) {
-        // 向上传递数据
+      selectItem(item, index) {
         this.$emit('select', item, index)
       },
       getDesc(song) {
