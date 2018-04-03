@@ -191,3 +191,9 @@ mapActions VUEX中调用action的方法和mapMutations位置一样
 33.项目测试  优化 编译打包
 
 1 测试 
+
+2.编译打包  npm run build
+
+3.优化  路由懒加载
+router 原本是同步加载  现在改为异步加载
+
