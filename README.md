@@ -123,7 +123,7 @@
 │   │   │   └── tab.vue
 │   │   ├── top-list(排行列表)
 │   │   │   └── top-list.vue
-│   │   └── user-center
+│   │   └── user-center(用户中心)
 │   │       └── user-center.vue
 │   ├── main.js(入口)
 │   ├── router(路由)

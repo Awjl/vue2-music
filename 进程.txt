@@ -184,3 +184,6 @@ mapActions VUEX中调用action的方法和mapMutations位置一样
  
       
 31.添加成功提示组件  <slot></slot>
+
+32.最后一个页面  用户中心
+定义最后一个收藏数据

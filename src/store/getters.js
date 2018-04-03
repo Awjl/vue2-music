@@ -33,3 +33,5 @@ export const topList = state => state.topList
 export const searchHistory = state => state.searchHistory
 // 最近播放
 export const playHistory = state => state.playHistory
+// 收藏列表
+export const fayoriteList = state => state.fayoriteList
